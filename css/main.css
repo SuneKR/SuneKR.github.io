@@ -2,6 +2,31 @@ body {
     margin: 60px auto;
     width: 70%;
 }
+
+/*the box which houses the columns*/
+.cvBox {
+    border-style: dotted;
+    overflow: hidden;
+}
+
+/*The columns*/
+.lcolumn { /* The small left side column */
+    margin: 10px;
+    width: 35%;
+    float: left;
+}
+.rcolumn { /* the must bigger right column */
+    margin: 10px;
+    width: 60%;
+    float: right;
+}
+.r2column { /* the must bigger right column */
+    margin: 10px;
+    width: 60%;
+    border-style: dashed;
+    float: right;
+}
+
 nav ul, footer ul {
     font-family:'Garamond', 'Sans-Serif';
     border: 3px #666;
@@ -31,16 +56,95 @@ h2 {
     text-transform: 'uppercase';
 }
 h3 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family:'Perpetua', 'Open Sans';
+    font-style: italic;
     font-weight: bold;
 }
 p {
+    font-size: 1em;
     font-family:'Garamond', 'Sans-Serif';
-    font-size: 1.5em;
-    line-height: 1.4em;
     color: #333;
 }
+p.i {
+    font-size: 1em;
+    font-family:'Garamond', 'Sans-Serif';
+    font-style: italic;
+    color: #333;
+}
+p.b {
+    font-size: 1em;
+    font-family:'Garamond', 'Sans-Serif';
+    font-style:bold;
+    color: #333;
+}
+p.h {
+    font-size: 1em;
+    font-family:'Garamond', 'Sans-Serif';
+    color: #333;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Container holding the image and the text */
+.imageContainer {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.bleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+.tleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.tright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+.bright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* progressbar */
+.progbar {
+   height: 1.5em;
+   width: 100%;
+   background-color: #fff;
+   position: relative;
+   border-style: solid;
+   border-color: #f09;
+   border-radius: 12px;
+}
+.progbar:before {
+    content: attr(data-label);
+    font-size: 0.8em;
+    font-family:'Garamond', 'Serif';
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    left: 0;
+    right: 0;
+}
+.progbar .value {
+    background-color: #f09;
+    display: inline-block;
+    height: 100%;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
