@@ -1,12 +1,28 @@
 body {
     margin: 60px auto;
     width: 70%;
+    background-image: url(http://omnibus.au.dk/typo3temp/_processed_/csm_Sune_R__c_nnow_AT_8340_f791fa3032.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffccff; 
+}
+
+nav {
+    width: 100%;
+    background-color: #ffccff;
+    margin: 0 px;
+    padding: 0 px;
+    border-style: solid;
+    border-color: #f09;
+    border-radius: 12px;
 }
 
 /*the box which houses the columns*/
 .cvBox {
     border-style: dotted;
     overflow: hidden;
+    background-color: #ffccff
 }
 
 /*The columns*/
@@ -29,7 +45,6 @@ body {
 
 nav ul, footer ul {
     font-family:'Garamond', 'Sans-Serif';
-    border: 3px #666;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -44,6 +59,9 @@ a {
 }
 a:hover {
     text-decoration: underline;
+    background-color: #ff0099;
+    padding: 17px;
+    color: #ffccff;
 }
 h1 {
     font-size: 3em;
@@ -54,34 +72,47 @@ h2 {
     font-size: 2em;
     font-family:'Impact', 'Sans-Serif';
     text-transform: 'uppercase';
+    margin: 0px;
+    padding: 0px;
 }
 h3 {
     font-size: 1.5em;
     font-family:'Perpetua', 'Open Sans';
     font-style: italic;
     font-weight: bold;
+    margin: 0px;
+    padding: 0px;
 }
 p {
     font-size: 1em;
     font-family:'Garamond', 'Sans-Serif';
-    color: #333;
+    color: #000000;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 p.i {
     font-size: 1em;
     font-family:'Garamond', 'Sans-Serif';
     font-style: italic;
-    color: #333;
+    color: #000000;
+    text-shadow: 1px 1px #ffffff;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 p.b {
     font-size: 1em;
     font-family:'Garamond', 'Sans-Serif';
-    font-style:bold;
-    color: #333;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 1px 1px #ffffff;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 p.h {
     font-size: 1em;
     font-family:'Garamond', 'Sans-Serif';
-    color: #333;
+    color: #000000;
+    text-shadow: 1px 1px #ffffff;
     margin: 0px;
     padding: 0px;
 }
@@ -91,6 +122,7 @@ p.h {
     position: relative;
     text-align: center;
     color: #fff;
+    text-shadow: 1px 1px #000;
 }
 .bleft {
     position: absolute;
@@ -101,6 +133,7 @@ p.h {
     position: absolute;
     top: 8px;
     left: 16px;
+    text-align: left;
 }
 .tright {
     position: absolute;
