@@ -1,28 +1,42 @@
+:root{
+    --bgC1: #bbded6;
+    --bgC2: #fae3d9;
+    --frtC: #ffb6b9;
+    --txtC: #61c0bf;
+}
+
 body {
     margin: 60px auto;
     width: 70%;
-    background-image: url(http://omnibus.au.dk/typo3temp/_processed_/csm_Sune_R__c_nnow_AT_8340_f791fa3032.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #ffccff; 
+    background: linear-gradient(45deg, var(--frtC) 12%, transparent 0, transparent 88%, var(--frtC) 0),
+    linear-gradient(135deg, transparent 37%, var(--bgC2) 0, var(--bgC2) 63%, transparent 0),
+    linear-gradient(45deg, transparent 37%, var(--frtC) 0, var(--frtC) 63%, transparent 0) var(--bgC1);
+    background-size: 25px 25px;
 }
 
 nav {
     width: 100%;
-    background-color: #ffccff;
+    background-color: var(--bgC2);
     margin: 0 px;
     padding: 0 px;
     border-style: solid;
-    border-color: #f09;
+    border-color: var(--frtC);
     border-radius: 12px;
+}
+.navName {
+    font-size: 2em;
+    display: inline;
+    font-family:'Garamond', 'Serif';
+    color: var(--frtC);
+    font-weight: bold;
+    text-align: right;
 }
 
 /*the box which houses the columns*/
-.cvBox {
+.box {
     border-style: dotted;
     overflow: hidden;
-    background-color: #ffccff
+    background-color: var(--bgC2)
 }
 
 /*The columns*/
@@ -55,18 +69,20 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #666;
+    color: var(--txtC);
 }
 a:hover {
     text-decoration: underline;
-    background-color: #ff0099;
-    padding: 17px;
-    color: #ffccff;
+    background-color: var(--frtC);
+    padding-top: 17px;
+    padding-bottom: 17px;
+    color: var(--bgC2);
 }
 h1 {
     font-size: 3em;
     font-family:'Garamond', 'Serif';
-    color: #f09;
+    color: var(--frtC);
+    text-shadow: 3px 3px 1px var(--txtC);
 }
 h2 {
     font-size: 2em;
@@ -74,6 +90,7 @@ h2 {
     text-transform: 'uppercase';
     margin: 0px;
     padding: 0px;
+    color: var(--txtC);
 }
 h3 {
     font-size: 1.5em;
@@ -82,11 +99,12 @@ h3 {
     font-weight: bold;
     margin: 0px;
     padding: 0px;
+    color: var(--txtC);
 }
 p {
     font-size: 1em;
     font-family:'Garamond', 'Sans-Serif';
-    color: #000000;
+    color: var(--txtC);
     padding-top: 0px;
     margin-top: 0px;
 }
@@ -94,8 +112,7 @@ p.i {
     font-size: 1em;
     font-family:'Garamond', 'Sans-Serif';
     font-style: italic;
-    color: #000000;
-    text-shadow: 1px 1px #ffffff;
+    color: var(--txtC);
     padding-top: 0px;
     margin-top: 0px;
 }
@@ -103,16 +120,14 @@ p.b {
     font-size: 1em;
     font-family:'Garamond', 'Sans-Serif';
     font-weight: bold;
-    color: #000000;
-    text-shadow: 1px 1px #ffffff;
+    color: var(--txtC);
     padding-top: 0px;
     margin-top: 0px;
 }
 p.h {
     font-size: 1em;
     font-family:'Garamond', 'Sans-Serif';
-    color: #000000;
-    text-shadow: 1px 1px #ffffff;
+    color: var(--txtC);
     margin: 0px;
     padding: 0px;
 }
@@ -121,8 +136,8 @@ p.h {
 .imageContainer {
     position: relative;
     text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px #000;
+    color: var(--bgC2);
+    text-shadow: 1px 1px var(--txtC);
 }
 .bleft {
     position: absolute;
@@ -156,10 +171,10 @@ p.h {
 .progbar {
    height: 1.5em;
    width: 100%;
-   background-color: #fff;
+   background-color: var(--bgC2);
    position: relative;
    border-style: solid;
-   border-color: #f09;
+   border-color: var(--frtC);
    border-radius: 12px;
 }
 .progbar:before {
@@ -173,13 +188,13 @@ p.h {
     right: 0;
 }
 .progbar .value {
-    background-color: #f09;
+    background-color: var(--frtC);
     display: inline-block;
     height: 100%;
 }
 
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 1px solid var(--frtC);
     font-size: .8em;
 }
 
