@@ -1,8 +1,8 @@
 :root{
-    --bgC1: #bbded6;
-    --bgC2: #fae3d9;
-    --frtC: #ffb6b9;
-    --txtC: #61c0bf;
+    --bgC1: #393e46;
+    --bgC2: #00adb5;
+    --frtC: #eeeeee;
+    --txtC: #222831;
 }
 
 body {
@@ -17,11 +17,16 @@ body {
 nav {
     width: 100%;
     background-color: var(--bgC2);
-    margin: 0 px;
-    padding: 0 px;
+    margin: 0px;
+    padding: 0px;
     border-style: solid;
     border-color: var(--frtC);
     border-radius: 12px;
+}
+
+.container{
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 /*the box which houses the columns*/
@@ -32,6 +37,7 @@ nav {
     border-color: var(--frtC);
     border-radius: 12px;
     padding: 10px;
+    margin: 10px;
 }
 
 .imgbrd{
@@ -59,10 +65,22 @@ nav {
     width: 60%;
     float: right;
 }
+@media (max-width: 1000px) {
+    .lcolumn {
+        width: 95%;
+        float: left;
+        padding: 10px;
+    }
+    .rcolumn{
+        width: 95%;
+        float: left;
+        padding: 10px;
+    }
+}
 
 nav ul, footer ul {
     font-family:'Garamond', 'Sans-Serif';
-    padding: 0px;
+    padding: 0px, 5px;
     list-style: none;
     font-weight: bold;
 }
@@ -73,12 +91,12 @@ nav ul li, footer ul li {
 a {
     text-decoration: none;
     color: var(--txtC);
+    margin: 0px;
 }
 a:hover {
     text-decoration: underline;
     background-color: var(--frtC);
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding: 17px 0px;
     color: var(--bgC2);
 }
 
@@ -92,15 +110,15 @@ h1 {
     padding: 0px;
 }
 h2 {
-    font-size: 2em;
-    font-family:'Impact', 'Sans-Serif';
+    font-size: 1.5em;
+    font-family:'agency fb', 'Sans-Serif';
     text-transform: 'uppercase';
     margin: 0px;
     padding: 0px;
     color: var(--txtC);
 }
 h3 {
-    font-size: 1.5em;
+    font-size: 1em;
     font-family:'Perpetua', 'Open Sans';
     font-style: italic;
     font-weight: bold;
@@ -120,6 +138,8 @@ p {
 }
 .bo{
     font-weight: bold;
+    padding: 0px;
+    margin: 0px;
 }
 .minusMP{
     margin: 0px;
@@ -170,10 +190,11 @@ p {
    border-style: solid;
    border-color: var(--frtC);
    border-radius: 12px;
+   border-width: 4px;
 }
 .progbar:before {
     content: attr(data-label);
-    font-size: 0.8em;
+    font-size: 1em;
     color: var(--txtC);
     font-family:'Garamond', 'Serif';
     position: absolute;
@@ -194,6 +215,8 @@ footer {
     border-style: solid;
     border-color: var(--frtC);
     border-radius: 12px;
+    padding: 0px 5px;
+    margin-top: 20 px;
 }
 
 ul.posts { 
