@@ -105,7 +105,7 @@ h1 {
     font-size: 3em;
     font-family:'agency fb', 'Serif';
     color: var(--txtC);
-    text-shadow: 3px 3px 1px var(--frtC);
+    text-shadow: -2px 0 var(--frtC), 0 2px var(--frtC), 2px 0 var(--frtC), 0 -2px var(--frtC);
     margin: 0px;
     padding: 0px;
 }
